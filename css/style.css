@@ -1,84 +1,79 @@
-*{
-    margin:0;
-    padding:0;
+/* Define as configurações padrão */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.center{
+  }
+  
+  /* Define o tamanho do texto padrão */
+  body {
+    font-size: 16px;
+  }
+  
+  /* Define o tamanho do texto para telas menores que 600px */
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  /* Define o estilo do cabeçalho */
+  header-container {
+    height: 60px;
+    padding: 50px 0;
+  }
+  
+  /* Define o estilo do logotipo */
+  .logo-container {
+    width: 99%;
+    text-align: center;
+  }
+  
+  /* Define o estilo do menu */
+  
+  .menu-container {
+    text-align: center;
+    margin-bottom: 50px;  /* adiciona margem abaixo do menu */
+  }
+  
+  .menu-container ul {
+    list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    max-width: 1100px;
-    margin:0 auto;
-    padding:0 2%;
-}
-
-html,body{
-    height:100%;
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-
-header{
-    height: 200px;;
-    padding:30px 0;
-}
-
-.logo{
-    width:70%;
-}
-
-.menu{
-    padding-top:0px;
-    width:70%;
-    text-align: right;
-}
-
-.menu a{
-    color:#ba6578;
-    text-decoration: none;
-    font-weight: bold;
-    margin-right: 20px;
-
-}
-
-section.sobre{
-    height: calc(100% - 200px);
-    position: relative;
-}
-
-.sabrina{
-    position: absolute;
-    bottom:-500;
-    right:-800;
-    width: 1500px;
-    height: 1250px;
-    border-radius:50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-container li {
+    margin-bottom: 10px;
+  }
+  
+  .menu-container li a {
+    display: block;
     background-color: #ba6578;
-}
-
-.icone{
+    color: #ffefef;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 18px;
+    text-transform: Verdana, Tahoma, sans-serif;
+  }
+  
+  .menu-container li a:hover {
+    background-color: #0f2846;
+  }
+  
+/* Fiz alterações para deixar os botão no centro */  
+  
+  /* Define o estilo das mídias sociais */
+  .social-media-container {
     position: absolute;
-    right: 730px;
-    top: -50;
-    left: 0;
-}
-
-.icone img{
-    width: 800px;
-    height: 900ox;
-}
-
-.social-midia{
-    position:absolute;
-    right: 0;
-    top: 1230px;
-    left: 1140;
-}
-
-.social-midia img{
+    right: 50px;
+    bottom: 50px;
+  }
+  
+  .social-media-container img {
     width: 35px;
     height: 35px;
     margin-right: 15px;
-
-}
+  }
