@@ -1,33 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="shortcut icon" href="image/logos-06.png" type="image/x-icon">
+               <!---fundo do site-->
+    <style>
+        body{
+        background-color:#0f2846;
+        background-image: url("image/fundo.jpg");
+        background-repeat: no-repeat;
+        background-size: contain; /* ou 'contain' */
+        background-position: center;
+        background-attachment: fixed;
+
+        }
+        /* background mobile*/
+        @media screen and (max-width:768px){
+          body {
+            background-color: #0f2846;
+            /* vai ficar liso até achar uma imagem ideal*/
+            background-image: none;
+          }
+        }
+    </style>
+
+    <!---links de imagens e styles--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="image/logos-16.png" type="image/x-icon">
     <title>Make Com Sabrina</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <div class="logo-container">
-                <img src="image/logos-05.png" alt="Logo da empresa">
-            </div>
-            <nav class="menu-container">
-                <ul>
-                    <li><a href="#">Candidate-se a Modelo</a></li>
-                    <li><a href="#">Fale comigo no WhatsApp</a></li>
-                    <li><a href="#">Tudo Sobre Mim</a></li>
-                </ul>
-            </nav>
-            <div class="social-media-container">
-                <a href="#"><img src="image/face.png" alt="Ícone do Facebook"></a>
-                <a href="#"><img src="image/insta.png" alt="Ícone do Instagram"></a>
-                <a href="#"><img src="image/twitter.png" alt="Ícone do Twitter"></a>
-            </div>
-        </div><!-- .header-container -->
-    </header>
 
+</head>
+
+<body>
+    <header class="header">
+        <!---fotoicone -->
+            <img class="icone-lp" src="image/iconelp.jpg" alt="">
+        <a href="index.html"><img class="logo" src="image/logo-00.png" alt=""></a>
+    </header>
     <main>
+        <!---Menu de opções--->
+        <nav class="menu-container">
+            <ul>
+                <li><a href="#">Candidate-se a Modelo</a></li>
+                <li><a href="https://api.whatsapp.com/message/DWLJS4X3447GN1?autoload=1&app_absent=0" target="_blank">Agendamento e cursos</a></li>
+                <li><a href="https://www.instagram.com/makecomsabrina/" target="blank">Instagram Portifólio</a></li>
+            </ul>
+        </nav>
         <section class="about-section">
             <div class="about-container">
                 <div class="icon-container"></div>
@@ -35,18 +53,35 @@
         </section>
     </main>
 
+    <!---rodapé-->
     <footer>
-        <div class="footer-container">
-            <div class="copyright">
-                <p>&copy; 2023 Make Com Sabrina. Todos os direitos reservados.</p>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Sabrina Freire<h6>Maquiadora profissional</h6></h1>
+                <p>Entre em contato</p>
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
             </div>
-            <div class="useful-links">
-                <ul>
-                    <li><a href="#">Política de Privacidade</a></li>
-                </ul>
-            </div>
-        </div><!-- .footer-container -->
-    </footer>
-
+            <ul class="footer-list">
+            <li>
+                <h3>Desenvolvido por:</h3>
+            </li>
+                 <li>
+                    <a href="https://www.instagram.com/siga_tj/" target="blank" class="footer-link">TJ Design</a>
+                 </li>
+            </ul>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2023 Todos os direitos reservados.
+        </div>
+       </footer>
 </body>
+
 </html>
