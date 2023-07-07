@@ -7,7 +7,10 @@
     box-sizing: border-box;
     font-family: 'Inter', Nanito, sans-serif;
     letter-spacing: 1px;
+    list-style: none;
+    text-decoration: none;
   }
+
   main {
     height: 100vh;
     width: 100%;
@@ -30,42 +33,67 @@
 
   /* define o estilo do cabeçalho */
   .header {
-    position: relative;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 500px;
-    display: grid;
+    padding: 10px;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    z-index: 1;
+    justify-content: space-around;
   }
-  /*icone lp*/
-   .icone-lp {
-    position: display: inline-block;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);;
-    margin-top: 8rem;
-    display: block;
-    height: 150px;
-    max-width: 150px;
-    width: 100%;
-    padding:1.5px;
-    background-color: #ffefef;
-    border: 5px solid #fac2ce;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background .3s;
 
-  } 
+  .header i {display: none;}
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  header .navegacao-primaria {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+header .navegacao-primaria li a {
+    padding: 10px;
+    color: #fff;
+    font-size: 1.3rem;
+  }
+
+header .navegacao-primaria li a:hover {
+    color: #ba6578;
+  }
+
 
   /* Define o estilo do logotipo */
-  .logo {
-    width: 100%;
-    max-width: 300px;
+   .logo {
+    position: relative;
+    left: 30%;
+    transform: translateX(-50%);;
+    margin-top: 1rem;
     display: block;
+    width: 100%;
+    max-width: 200px;
     margin: 0 auto;
+    cursor: pointer;
+  }
+
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*icone lp*/
+  .icone-lp {
+    position: relative;
+    margin-top: auto;
+    height: 250px;
+    max-width: 250px;
+    width: 550px;
+    padding:2.5px;
+    background-color: transparent;
+    border: 0.2px solid  #dfa0ae;
+    border-radius: 50%;
+    cursor: pointer;
   }
 
   /* Define o estilo do menu */
@@ -74,7 +102,7 @@
     font-family: 'Nunito', sans-serif;
     text-align: center;
     position: absolute;
-    top: 500px;
+    margin-top: 30rem;
   }
 
   /* 'margin-bottom' adiciona margem abaixo do menu */
@@ -87,7 +115,7 @@
   }
   
   .menu-container li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
   
   .menu-container li a {
@@ -96,7 +124,7 @@
     color: #ffefef;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 18px;
+    border-radius: 0px;
     text-transform: Inter, sans-serif;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
   }
@@ -112,6 +140,7 @@
   footer {
     width: 100%;
     color: #f5f5f5;
+    box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.4);
   }
   .footer-link {
     text-decoration: none;
@@ -124,7 +153,7 @@
     padding: 3rem 3.5rem;
   }
   #footer_contacts h1 {
-    margin-bottom: 0.02rem;
+    margin-bottom: 0.03rem;
   }
   
   #footer_social_media {
@@ -174,6 +203,29 @@
     padding: 1.5rem;
     font-weight: 100;
   }
+@media screen and (max-width: 992px) {
+  header {
+    height: 7rem;
+    box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.4);
+  }
+  header .navegacao-primaria {
+    display: none;
+  }
+  .header i {
+    display: block;
+    color: #ba6578;
+    cursor: pointer;
+    font-size: 2.5rem;
+  }
+  .logo {
+    margin-top: 1.0rem;
+    width: 100%;
+    max-width: 170px;
+  }
+  .icone-lp {
+    margin-top: 2rem;
+  }
+}
 
 @media screen and (max-width:768px) {
   #footer_content {
@@ -182,6 +234,7 @@
     background-color: #0f2846;
   }
 }
+
 @media screen and (max-width:426px) {
   #footer_content {
     grid-template-columns: repeat(1, 1fr);
